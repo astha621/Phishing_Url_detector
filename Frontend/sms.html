@@ -33,30 +33,39 @@
             bottom: 500px;
         }
 
+        #1 {
+            display: relative;
+            height: 5rem;
+        }
+
         textarea{
+            resize: none;
             height: 100px;
             width: 400px;
             border-radius: 5px;
             border: 2px solid #fff;
+            text-align: center;
         }
 
         button{
-            width: 405px;
+            width: 60px;
             background-color: black;
             color: white;
-            height: 25px;
-            border-radius: 25px;
+            height: 90px;
+            position: absolute;
+            top: 50%;
+            margin-left: 4px;
             transition-property: all;
         }
 
         button:hover{
-            background-color: pink;
+            background-color: rgb(255, 0, 0);
             color: black;
             font-size: 15px;
         }
 
         button:active{
-            color: red;
+            color: #fff;
         }
 
         h1{
@@ -69,8 +78,8 @@
     <div class="bg-image"></div>
     <div class="inner">
         <h1><u>Check Your Messages For Free</u> &#128522;</h1>
-        <div>
-            <textarea name = "feedback" placeholder="write your Mail/SMS here..." rows = "10" columns = "300"></textarea> <br>
+        <div id="1">
+            <textarea name = "feedback" placeholder="write your Mail/SMS here..." rows = "10" columns = "300"></textarea>
             <button>Check</button>
         </div>
     </div>
