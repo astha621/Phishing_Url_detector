@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("https://static.wixstatic.com/media/f07c0c_2c62312ada4144119bb0d0a86eb68578~mv2.gif");
+
+            /* Add the blur effect */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+
+            /* Full height */
+            height: 100%;
+            width: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #main{
+            text-align: center;
+            position: absolute;
+            top: 110px;
+            left: 745px;
+            z-index: 2;
+        }
+
+        h3{
+            color: white;
+            font-size: 20px;
+        }
+
+        h1{
+            position: relative;
+            right: 5px;
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #fff 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%
+                );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 95px;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        button{
+            height: 40px;
+            background-color: white;
+            color: black;
+            font-style: italic;
+            border: 2px solid white;
+            border-radius: 25px;
+            margin-right: 30px;
+            transition-property: all;
+        }
+
+        button:hover{
+            background-color: pink;
+            color: white;
+            font-size: 15px;
+        }
+
+        button:active{
+            color: red;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #scan{
+            position: relative;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div id="main">
+        <h1>Secure<br>Solutions</h1>
+        <div id="scan">
+            <h3><i>Scan Fake Messages & URLs for Malware and Suspicious Behaviour</i></h3>
+            <button><a href="url.html">Detect Malicious URL</a></button>
+            <button><a href="sms.html">Detect Spam Email/SMS</a></button>
+        </div>
+    </div>
+</body>
+</html>

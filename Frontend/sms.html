@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sms</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("https://wallpaperaccess.com/full/1673420.jpg");
+
+            /* Add the blur effect */
+            filter: blur(6px);
+            -webkit-filter: blur(6px);
+
+            /* Full height */
+            height: 100%;
+            width: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .inner{
+            position: relative;
+            text-align: center;
+            bottom: 500px;
+        }
+
+        textarea{
+            height: 100px;
+            width: 400px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+        }
+
+        button{
+            width: 405px;
+            background-color: black;
+            color: white;
+            height: 25px;
+            border-radius: 25px;
+            transition-property: all;
+        }
+
+        button:hover{
+            background-color: pink;
+            color: black;
+            font-size: 15px;
+        }
+
+        button:active{
+            color: red;
+        }
+
+        h1{
+            color: white;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="inner">
+        <h1><u>Check Your Messages For Free</u> &#128522;</h1>
+        <div>
+            <textarea name = "feedback" placeholder="write your Mail/SMS here..." rows = "10" columns = "300"></textarea> <br>
+            <button>Check</button>
+        </div>
+    </div>
+</body>
+</html>
